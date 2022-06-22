@@ -9,17 +9,26 @@ export function Header() {
       </div>
       <Content>
         <Perfil>
-        <img src={ perfil } alt="" />
+          <div>
+            <img src={ perfil } alt="" />
+            <ul>
+              <li>Instagram colocar icones</li>
+              <li>Linkedin</li>
+              <li>Github</li>
+              <li>Twitter</li>
+            </ul>
+          </div>
         <div>
           <h4>JonasNunes</h4>
-          <h5>Desenvolvedor Web - Front-End</h5>
+          <h5>Desenvolvedor Web - FrontEnd</h5>
+
         </div>
         </Perfil>
         <Menu>
           <a href="">Sobre</a>
           <a href="">Projetos</a>
           <a href="">Stacks</a>
-          <a href="https://web.whatsapp.com/send?phone=+5581997645036&text=Olá, gostaria de realizar um orçamento para o desenvolvimento de um site!" target='__blank'>Contato</a>
+          <a href="https://web.whatsapp.com/send?phone=+5581997645036&text=Olá, gostaria de realizar um orçamento para o desenvolvimento de um site!" target='__blank'>Contato colocar icone do whats</a>
         </Menu>
       </Content>
     </Container>
