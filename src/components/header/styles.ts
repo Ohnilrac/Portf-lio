@@ -1,73 +1,72 @@
 import styled from 'styled-components'
+import { darken } from 'polished'
 
 export const Container = styled.header`
-  margin-left: 10rem;
-  margin-right: 10rem;
+
+  .background{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
 `
+
 export const Content = styled.nav`
+  margin: -55rem 10rem 0 10rem;
+  height: 55rem;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
 `
 export const Perfil = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
 
   img{
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     margin: 2rem 0 0.75rem 0;
 
     clip-path: circle();
   }
 
-  span{
-    color: var(--green);
+  h4{
     font-size: 3rem;
+    margin-left: 2rem;
+
+    color: var(--white);
   }
 
-  h4{
-    font-size: 2rem;
-    color: var(--gray);
+  h5{
+    font-size: 1.5rem;
+    margin: 1rem 0 0 2rem;
+
+    color: var(--white);
   }
 `
 
-export const Menu = styled.ul`
+export const Menu = styled.div`
   display: flex;
 
-  li{
-    padding: 1rem 2.5rem;
-
-    &:nth-child(3){
-      margin-right: 10rem;
-    }
-  }
-
   a{
-    color: var(--gray);
-    font-size: 2.5rem;
-
-    transition: color 0.3s;
-
-    &:hover{
-      color: var(--white);
-    }
-  }
-
-  .contact{
-    font-weight: bold;
-    border-radius: 25px;
-    border: none;
-
-    cursor: pointer;
+    display: inline-block;
+    
+    font-size: 2rem;
+    margin-left: 1rem;
+    padding: 1rem 2.5rem; 
 
     color: var(--white);
-    background: var(--green);
-    transition: filter 0.3s;
-    
+
+    border: 1px solid var(--white);
+    border-radius: 8px;
+    background: transparent;
+
+    &:nth-child(3){
+      margin-right: 5rem;
+    }
+
     &:hover{
-      filter: brightness(0.8);
+      background: ${darken(0.7, '#fff')};
     }
   }
 `
