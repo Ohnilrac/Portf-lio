@@ -11,7 +11,7 @@ export const Container = styled.header`
 `
 
 export const Content = styled.nav`
-  margin: -55rem 10rem 0 10rem;
+  margin: -48rem 10rem 0 10rem;
   height: 55rem;
   
   display: flex;
@@ -66,7 +66,7 @@ export const Menu = styled.div`
     }
 
     &:hover{
-      background: ${darken(0.7, '#fff')};
+      background: ${darken(0.5, '#d7d7d7')};
     }
   }
 `
