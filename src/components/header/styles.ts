@@ -52,7 +52,7 @@ export const Perfil = styled.div`
       display: inline-block;
       font-size: 2.75rem;
       margin-right: 0.5rem;
-      color: var(--black);
+      color: var(--white);
 
       transition: 0.3s;
 
@@ -65,12 +65,12 @@ export const Perfil = styled.div`
 
   h4{
     font-size: 3rem;
-    color: var(--black);
+    color: var(--white);
   }
 
   h5{
     font-size: 1.5rem;
-    color: var(--black);
+    color: var(--white);
   }
 `
 
@@ -82,13 +82,12 @@ export const Menu = styled.div`
     display: inline-block;
     
     font-size: 2rem;
-    font-weight: 600;
     margin-left: 1rem;
     padding: 1rem 2.5rem; 
 
-    color: var(--black);
+    color: var(--white);
 
-    border: 1px solid var(--black);
+    border: 1px solid var(--white);
     border-radius: 8px;
     background: transparent;
     transition: background 0.3s;
@@ -99,13 +98,13 @@ export const Menu = styled.div`
     }
     
     &:hover{
-      background: ${darken(0.4, '#fff')};
+      background: ${darken(0.6, '#fff')};
     }
     
     span{
       font-size: 2rem;
       color: green;
-      margin-left: 0.5rem;
+      margin-left: 1rem;
     }
   }
 `

@@ -1,5 +1,6 @@
 import { Header } from "./components/header";
 import { Main } from "./components/main";
+import { Projects } from "./components/projects";
 import { GlobalStyles } from "./styles/global";
 
 export function App() {
@@ -8,6 +9,7 @@ export function App() {
     <div>
       <Header />
       <Main />
+      <Projects />
       <GlobalStyles />
     </div>
   )
