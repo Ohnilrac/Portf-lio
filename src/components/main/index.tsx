@@ -1,4 +1,5 @@
-import { Container } from './styles'
+import { Container, Icons } from './styles'
+import { DiHtml5, DiCss3, DiJsBadge, DiReact} from 'react-icons/di'
 
 export function Main(){
   return (
@@ -6,18 +7,17 @@ export function Main(){
         <Container id="sobre"> 
           <section>
             <div>
-              <h1>Sobre</h1>
-              <h2>Jonas Nunes</h2>
-              <p>Olá, meu nome é Jonas Nunes. Sou desenvolvedor Web FrontEnd, apaixonado por qualquer coisa que envolva tecnologia. Seja muito bem vindo&#40;a&#41; ao meu mundo e fique a vontade para olhar os trabalhos que já desenvolvi.</p>
-              <p>Abaixo estão todos projetos hospedados para visualização.</p>
+              <h2>Sobre</h2>
+              <p>Olá, eu sou Jonas Nunes desenvolvedor Web FrontEnd e estou aberto para ter a oportunidades de poder trabalhar com você. Sou apaixonado pela área de tecnologia e todo o universo Geek. Seja muito bem vindo&#40;a&#41; ao meu mundo e fique a vontade para olhar os trabalhos que por mim já foram desenvolvidos e os que tambem estão em andamento!</p>
+              <p>Abaixo você consegue acessar todos os projetos hospedados para visualização.</p>
             </div>
 
-            <ul>
-              <li>HTML colocar icones</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React.Jss</li>
-            </ul>
+            <Icons>
+              <li className='html'><DiHtml5 /></li>
+              <li className='css'><DiCss3 /></li>
+              <li className='js'><DiJsBadge /></li>
+              <li className='react'><DiReact /></li>
+            </Icons>
           </section>
         </Container>
         </>

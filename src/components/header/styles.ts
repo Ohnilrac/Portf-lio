@@ -1,17 +1,32 @@
 import styled from 'styled-components'
 import { darken } from 'polished'
 
-export const Container = styled.header`
-
-  .background{
+export const Background = styled.div`
     width: 100%;
-    height: 400px;
-    object-fit: cover;
-  }
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -100;
+
+    opacity: 0.9;
+
+    img{
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+`
+
+export const Container = styled.header`
+  width: 100%;
+  margin-top: 45rem;
+  z-index: 100;
+
 `
 
 export const Content = styled.nav`
-  margin: -48rem 10rem 0 10rem;
+  margin: -55rem 10rem 0 10rem;
   height: 55rem;
   
   display: flex;
@@ -25,48 +40,72 @@ export const Perfil = styled.div`
   img{
     width: 120px;
     height: 120px;
-    margin: 2rem 0 0.75rem 0;
+    margin: 2rem 2rem 0.75rem 0;
 
     clip-path: circle();
   }
 
+  ul{
+    display: flex;
+
+    a{
+      display: inline-block;
+      font-size: 2.75rem;
+      margin-right: 0.5rem;
+      color: var(--black);
+
+      transition: 0.3s;
+
+      &:hover{
+        transform: translateY(-4px);
+        color: var(--gray);
+      }
+    }
+  }
+
   h4{
     font-size: 3rem;
-    margin-left: 2rem;
-
-    color: var(--white);
+    color: var(--black);
   }
 
   h5{
     font-size: 1.5rem;
-    margin: 1rem 0 0 2rem;
-
-    color: var(--white);
+    color: var(--black);
   }
 `
 
 export const Menu = styled.div`
   display: flex;
+  align-items: center;
 
   a{
     display: inline-block;
     
     font-size: 2rem;
+    font-weight: 600;
     margin-left: 1rem;
     padding: 1rem 2.5rem; 
 
-    color: var(--white);
+    color: var(--black);
 
-    border: 1px solid var(--white);
+    border: 1px solid var(--black);
     border-radius: 8px;
     background: transparent;
+    transition: background 0.3s;
 
-    &:nth-child(3){
-      margin-right: 5rem;
+    &:nth-child(4){
+      display: flex;
+      margin-left: 5rem;
     }
-
+    
     &:hover{
-      background: ${darken(0.5, '#d7d7d7')};
+      background: ${darken(0.4, '#fff')};
+    }
+    
+    span{
+      font-size: 2rem;
+      color: green;
+      margin-left: 0.5rem;
     }
   }
 `

@@ -1,36 +1,43 @@
 import perfil from '../../assets/profile.jpg'
-import { Container, Content, Menu, Perfil } from './styles'
+import { AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle, AiOutlineGithub, AiOutlineWhatsApp } from 'react-icons/ai'
+import { Background, Container, Content, Menu, Perfil } from './styles'
 
 export function Header() {
   return (
+    <>
+      <Background>
+        <img src="https://images.unsplash.com/photo-1546146830-2cca9512c68e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=50" />
+      </Background>
     <Container>
-      <div>
-        <img className='background' src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
-      </div>
       <Content>
         <Perfil>
           <div>
             <img src={ perfil } alt="" />
             <ul>
-              <li>Instagram colocar icones</li>
-              <li>Linkedin</li>
-              <li>Github</li>
-              <li>Twitter</li>
+              <li>
+                <a href="https://www.instagram.com/jonasnuness/" target="__blank"><AiFillInstagram /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/jonas-nunes-a30b57138/" target="__blank"><AiFillLinkedin /></a></li>
+              <li>
+                <a href="https://twitter.com/Jonas_Nunes_" target="__blank"><AiFillTwitterCircle /></a></li>
+              <li>
+                <a href="https://github.com/Ohnilrac" target="__blank"><AiOutlineGithub /></a></li>
             </ul>
           </div>
-        <div>
-          <h4>JonasNunes</h4>
-          <h5>Desenvolvedor Web - FrontEnd</h5>
-
-        </div>
+          <div>
+            <h4>JonasNunes</h4>
+            <h5>Desenvolvedor Web - FrontEnd</h5>
+          </div>
         </Perfil>
         <Menu>
-          <a href="">Sobre</a>
-          <a href="">Projetos</a>
-          <a href="">Stacks</a>
-          <a href="https://web.whatsapp.com/send?phone=+5581997645036&text=Olá, gostaria de realizar um orçamento para o desenvolvimento de um site!" target='__blank'>Contato colocar icone do whats</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#stacks">Stacks</a>
+          <a href="https://web.whatsapp.com/send?phone=+5581997645036&text=Olá, gostaria de realizar um orçamento para o desenvolvimento de um site!" target='__blank'>Contato <span><AiOutlineWhatsApp /></span></a>
         </Menu>
       </Content>
     </Container>
+  </>
   )
 }

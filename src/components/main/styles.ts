@@ -24,19 +24,34 @@ export const Container = styled.main`
     font-weight: normal;
   }
 
-  h1{
+  h2{
     font-size: 4rem;
     margin-bottom: 1.5rem;
   }
 
-  h2{
-    font-size: 2.8rem;
-    margin-bottom: 0.75rem;
-  }
-
   p{
     width: 45%;
-    font-size: 1.75rem;
+    font-size: 1.875rem;
     margin-bottom: 1rem;
+  }
+`
+
+export const Icons = styled.ul`
+  font-size: 8rem;
+
+  .html{
+    color: #f16524;
+  }
+  
+  .css{
+    color: #00a1df;
+  }
+
+  .js{
+    color: #e6b101;
+  }
+
+  .react{
+    color: #61dafb;
   }
 `
