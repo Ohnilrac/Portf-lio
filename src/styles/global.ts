@@ -8,6 +8,9 @@ export const GlobalStyles = createGlobalStyle`
     --green: #00d04c;
     --white: #fff;
     --gray: #556270;
+    --gray-2: #e6e6e6;
+    --gray-3: #646464;
+    --blue-light: #4ecdc4;
   }
 
   *{
@@ -19,6 +22,10 @@ export const GlobalStyles = createGlobalStyle`
 
   html{
     font-size: 62.5%;
+  }
+
+  body{
+    background: var(--gray-2);
   }
 
   ul{
