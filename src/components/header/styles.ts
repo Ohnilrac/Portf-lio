@@ -26,7 +26,8 @@ export const Container = styled.header`
 `
 
 export const Content = styled.nav`
-  margin: -55rem 10rem 0 10rem;
+  width: 80%;
+  margin: -55rem auto;
   height: 55rem;
   
   display: flex;

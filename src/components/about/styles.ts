@@ -1,15 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-  margin-top: -12rem;
   background-color: var(--gray);
 
-  width: 70%;
-
-  margin-left: auto;
-  margin-right: auto;
+  width: 80%;
+  margin: 45rem auto 0;
   padding: 2rem;
-
   border-radius: 15px;
 
   section{
