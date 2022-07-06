@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-  background-color: var(--gray);
+  background-color: var(--box);
 
   width: 80%;
   margin: 45rem auto 0;
@@ -17,7 +17,7 @@ export const Container = styled.main`
   }
 
   h1, h2{
-    font-weight: normal;
+    font-weight: bold;
   }
 
   h2{

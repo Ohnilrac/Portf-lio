@@ -5,20 +5,44 @@ export const Container = styled.article`
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
+export const Title = styled.div`
+  margin-top: 10rem;
+  position: relative;
+
+  &::after, &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: var(--buttons);
+    height: 3px;
+  }
+
+  h2{
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--white);
+    margin: 0.5rem 0;
+  }
+`
+
 
 export const Content = styled.section`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
+  gap: 9rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
 `
 
 export const Post = styled.div`
-  max-width: 41rem;
-  margin-top: 15rem;
+  max-width: 31rem;
+  margin-top: 4rem;
   border-radius: 8px;
-  background: var(--white);
+  background: var(--box);
 
   display: flex;
   flex-direction: column;
@@ -32,8 +56,8 @@ export const Post = styled.div`
   }
 
   h3{
+    color: var(--white);
     font-size: 2.5rem;
-
     margin: 1.5rem 0;
   }
 
@@ -41,6 +65,7 @@ export const Post = styled.div`
     font-size: 1.5rem;
     margin-bottom: 1rem;
     padding: 1rem;
+    color: var(--white);
   }
 
 
@@ -59,14 +84,33 @@ export const Post = styled.div`
       text-align: center;
 
       border-radius: 8px;
-      background: ${darken(0.2, '#4ecdc4')};
-      color: var(--white);
-      transition: all 0.5s;
+      background: var(--buttons);
+      color: var(--background);
+      transition: color 0.5s;
 
       &:hover {
-        background: ${darken(0.1, '#4ecdc4')};
-        color: ${darken(0.6, '#fff')} ;
+        color: ${darken(0.2, '#fff')} ;
       }
     }
   }
+
+  .dev{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    background: var(--buttons);
+    color: var(--background);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    transition: color 0.5s;
+
+    &:hover {
+      color: var(--white);
+    }
+    }
 `

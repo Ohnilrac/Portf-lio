@@ -4,13 +4,13 @@ export const GlobalStyles = createGlobalStyle`
 
   :root{
     //Colors
-    --black: #060608;
-    --green: #00d04c;
-    --white: #fff;
-    --gray: #556270;
-    --gray-2: #e6e6e6;
-    --gray-3: #646464;
-    --blue-light: #4ecdc4;
+    --background: #121214;
+    --white: #D6D6DB;
+    --green: #04d361;
+    --line: #8257e6;
+    --box: #202024;
+    --icons: #A8A8B3;
+    --buttons: #8257E5;
   }
 
   *{
@@ -25,7 +25,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body{
-    background: var(--gray-2);
+    background: var(--background);
   }
 
   ul{

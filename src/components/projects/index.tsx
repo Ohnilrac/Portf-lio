@@ -1,4 +1,4 @@
-import { Container, Content, Post } from "./styles";
+import { Container, Content, Post, Title } from "./styles";
 import {AiFillEye, AiFillGithub} from "react-icons/ai"
 
 import loja from "../../assets/loja.png"
@@ -12,12 +12,15 @@ import wait from "../../assets/wait.gif"
 export function Projects(){
   return (
     <Container>
+        <Title><h2>PROJETOS</h2></Title>
       <Content>
         <Post>
           <img src={wait} alt="" />
-          <h3>Meu site</h3>
+          <h3>Jonas</h3>
           <p>E esse é o projeto em que você atualmente está navegando</p>
-          <a href="https://github.com/Ohnilrac/Portfolio" target="_blank">Em desenvolvimento</a>
+          <a href="https://github.com/Ohnilrac/Portfolio"
+            target="_blank"
+            className="dev">Em desenvolvimento<AiFillGithub /></a>
         </Post>
         <Post>
           <img src={loja} alt="" />

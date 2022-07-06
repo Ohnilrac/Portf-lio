@@ -59,7 +59,7 @@ export const Perfil = styled.div`
 
       &:hover{
         transform: translateY(-4px);
-        color: var(--gray);
+        color: var(--buttons);
       }
     }
   }
@@ -69,7 +69,7 @@ export const Perfil = styled.div`
     color: var(--white);
   }
 
-  h5{
+  p{
     font-size: 1.5rem;
     color: var(--white);
   }
@@ -78,34 +78,43 @@ export const Perfil = styled.div`
 export const Menu = styled.div`
   display: flex;
   align-items: center;
+  background: var(--box);
 
   a{
-    display: inline-block;
-    
+    width: 15rem;
+    height: 5rem;
+    border: 2px solid var(--buttons);
     font-size: 2rem;
-    margin-left: 1rem;
-    padding: 1rem 2.5rem; 
-
     color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
 
-    border: 1px solid var(--white);
-    border-radius: 8px;
-    background: transparent;
-    transition: background 0.3s;
+    &::after, &::before{
+    position: absolute;
+    background: var(--box);
+    z-index: -1;
+    transition: 1s;
+    content: '';
+    }
 
-    &:nth-child(4){
-      display: flex;
-      margin-left: 5rem;
+    &::before{
+      height: 5rem;
+      width: 13rem;
     }
-    
-    &:hover{
-      background: ${darken(0.6, '#fff')};
+    &::after{
+      width: 15rem;
+      height: 5rem;
     }
-    
-    span{
-      font-size: 2rem;
-      color: green;
-      margin-left: 1rem;
+
+    &:hover::after{
+      height: 0;
+    }
+    &:hover::before{
+      width: 0;
     }
   }
 `

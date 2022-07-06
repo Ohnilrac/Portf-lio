@@ -27,14 +27,14 @@ export function Header() {
           </div>
           <div>
             <h4>JonasNunes</h4>
-            <h5>Desenvolvedor Web - FrontEnd</h5>
+            <p>Desenvolvedor Web - FrontEnd</p>
           </div>
         </Perfil>
         <Menu>
           <a href="#sobre">Sobre</a>
           <a href="#projetos">Projetos</a>
           <a href="#stacks">Stacks</a>
-          <a href="https://web.whatsapp.com/send?phone=+5581997645036&text=Olá, gostaria de realizar um orçamento para o desenvolvimento de um site!" target='__blank'>Contato <span><AiOutlineWhatsApp /></span></a>
+          <a href="https://web.whatsapp.com/send?phone=+5581997645036&text=Olá, gostaria de realizar um orçamento para o desenvolvimento de um site!" target='__blank'>Contato</a>
         </Menu>
       </Content>
     </Container>
