@@ -11,7 +11,7 @@ import wait from "../../assets/wait.gif"
 
 export function Projects(){
   return (
-    <Container>
+    <Container id="projects">
         <Title><h2>PROJETOS</h2></Title>
       <Content>
         <Post>

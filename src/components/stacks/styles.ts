@@ -21,7 +21,8 @@ export const Stack = styled.div`
   align-items: center;
 
   background: var(--box);
-  margin-right: 6rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   padding: 3rem;
 
   &:nth-child(even){

@@ -6,7 +6,7 @@ import { AiFillInstagram, AiOutlineGithub, AiFillLinkedin, AiFillTwitterCircle }
 
 export function Footer() {
   return(
-    <Container>
+    <Container id="footer">
       <Content>
         <h3>
           Desenvolvido com <span><RiReactjsLine /></span> por Jonas Nunes

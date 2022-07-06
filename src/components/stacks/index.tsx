@@ -11,7 +11,7 @@ import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
 
 export function Stacks() {
   return (
-    <Tools>
+    <Tools id="stacks">
       <Title><h2>STACKS</h2></Title>
       <Content>
         <Stack>

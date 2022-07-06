@@ -4,7 +4,7 @@ import { DiHtml5, DiCss3, DiJsBadge, DiReact} from 'react-icons/di'
 export function Main(){
   return (
         <>
-        <Container id="sobre"> 
+        <Container id="about"> 
           <section>
             <div>
               <h2>Sobre</h2>
