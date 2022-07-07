@@ -20,13 +20,14 @@ export const Title = styled.div`
     width: 100%;
     background: var(--buttons);
     height: 3px;
+    /* margin-bottom: 3rem; */
   }
-
+  
   h2{
+    padding: 0.25rem;
     font-size: 4rem;
     font-weight: 600;
     color: var(--white);
-    margin: 0.5rem 0;
   }
 `
 
@@ -36,6 +37,10 @@ export const Content = styled.section`
   gap: 9rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
+
+  @media (max-width: 375px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 export const Post = styled.div`

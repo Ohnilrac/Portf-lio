@@ -1,17 +1,17 @@
 import perfil from '../../assets/profile.jpg'
-import { AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle, AiOutlineGithub, AiOutlineWhatsApp } from 'react-icons/ai'
-import { Background, Container, Content, Menu, Perfil } from './styles'
+import { AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle, AiOutlineGithub } from 'react-icons/ai'
+import { Background, Container, Content, Info, Menu, Perfil, Persona } from './styles'
 
 export function Header() {
   return (
     <>
+    <Container id='header'>
       <Background>
         <img src="https://images.unsplash.com/photo-1586645068267-21a3e8949fdb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80" />
       </Background>
-    <Container id='header'>
       <Content>
         <Perfil>
-          <div>
+          <Persona>
             <img src={ perfil } alt="" />
             <ul>
               <li>
@@ -24,15 +24,14 @@ export function Header() {
               <li>
                 <a href="https://github.com/Ohnilrac" target="__blank"><AiOutlineGithub /></a></li>
             </ul>
-          </div>
-          <div>
+          </Persona>
+          <Info>
             <h4>JonasNunes</h4>
             <p>Desenvolvedor Web - FrontEnd</p>
-          </div>
+          </Info>
         </Perfil>
         <Menu>
-          <a href="#sobre">Sobre</a>
-          <a href="#projetos">Projetos</a>
+          <a href="#projects">Projetos</a>
           <a href="#stacks">Stacks</a>
           <a href="https://web.whatsapp.com/send?phone=+5581997645036&text=Olá, gostaria de realizar um orçamento para o desenvolvimento de um site!" target='__blank'>Contato</a>
         </Menu>
