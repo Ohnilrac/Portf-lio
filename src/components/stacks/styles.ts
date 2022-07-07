@@ -13,6 +13,10 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 375px) {
+    flex-direction: column;
+  }
 `
 
 export const Stack = styled.div`
@@ -21,13 +25,8 @@ export const Stack = styled.div`
   align-items: center;
 
   background: var(--box);
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 4rem 5rem 0 2rem;
   padding: 3rem;
-
-  &:nth-child(even){
-    margin-top: 20rem;
-  }
 
   span{
     font-size: 18rem;
