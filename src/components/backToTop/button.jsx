@@ -1,14 +1,13 @@
 import { BsFillArrowUpCircleFill } from 'react-icons/bs'
-import { Button } from './styles'
-
+import './styles.css'
 
 export function BackTotop() {
   const backToTop = document.querySelector('.back-to-top')
   function button() {
-    if (window.scrollY >= 780){
-      backToTop?.classList.add('show')
+    if (window.scrollY >= 100){
+      backToTop.classList.add('show')
     } else {
-      backToTop?.classList.remove('show')
+      backToTop.classList.remove('show')
     }
   }
 
@@ -16,10 +15,9 @@ export function BackTotop() {
     button()
   })
 
-
   return(
-    <Button href="#header" className='back-to-top'>
+    <a href="#header" className='back-to-top'>
       <BsFillArrowUpCircleFill />
-    </Button>
+    </a>
   )
 }
