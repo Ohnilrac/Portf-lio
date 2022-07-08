@@ -1,4 +1,4 @@
-.back-to-top{
+.show{
   font-size: 3.5rem;
   color: var(--buttons);
   
@@ -6,15 +6,5 @@
   right: 1rem;
   bottom: 1rem;
 
-  visibility: hidden;
-  opacity: 0;
-
-  transform: translateY(100%);
   transition: 0.8s;
-  }
-
-.back-to-top.show{
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
   }

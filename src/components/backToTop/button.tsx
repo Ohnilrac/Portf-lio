@@ -1,22 +1,26 @@
 import { BsFillArrowUpCircleFill } from 'react-icons/bs'
+import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import './styles.css'
+import { useState } from 'react'
 
 export function BackTotop() {
-  const backToTop = document.querySelector('.back-to-top')
-  function button() {
-    if (window.scrollY >= 100){
-      backToTop.classList.add('show')
-    } else {
-      backToTop.classList.remove('show')
-    }
-  }
+  const [shouldStyleOnScroll, setShouldStyleOnScroll] = useState(true);
 
-  window.addEventListener('scroll', function(){
-    button()
-  })
+  useScrollPosition(
+    ({ currPos }) => {
+      const isOnTop = currPos.y === 0;
+
+        if (isOnTop != shouldStyleOnScroll)
+          setShouldStyleOnScroll(false);
+      },
+      [shouldStyleOnScroll],
+      undefined,
+      false,
+      100,
+  );
 
   return(
-    <a href="#header" className='back-to-top'>
+    <a href="#header" className={`${shouldStyleOnScroll ? '' : 'show'}`}>
       <BsFillArrowUpCircleFill />
     </a>
   )
