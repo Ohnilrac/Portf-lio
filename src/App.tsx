@@ -4,7 +4,7 @@ import { Projects } from "./components/projects";
 import { GlobalStyles } from "./styles/global";
 import { Stacks } from "./components/stacks";
 import { Footer } from "./components/footer";
-import { BackTotop } from "./components/backToTop/button.jsx";
+import { BackTotop } from "./components/backToTop/button";
 
 export function App() {
 

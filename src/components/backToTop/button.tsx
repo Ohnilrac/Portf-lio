@@ -16,7 +16,7 @@ export function BackTotop() {
       [shouldStyleOnScroll],
       undefined,
       false,
-      100,
+      300,
   );
 
   return(
