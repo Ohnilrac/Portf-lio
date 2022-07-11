@@ -48,4 +48,22 @@ export const Content = styled.div`
       }
     }
   }
+
+  @media (max-width: 415px) {
+    h3{
+      font-size: 1.5rem;
+
+      span{
+        font-size: 1.5rem;
+      }
+    }
+
+    ul{
+      margin-top: 3rem;
+
+      li{
+        font-size: 2.5rem;
+      }
+    }
+  }
 `

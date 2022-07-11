@@ -12,10 +12,11 @@ export const Tools = styled.section`
 export const Content = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
-  @media (max-width: 375px) {
-    flex-direction: column;
+  @media (max-width: 415px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 `
 
@@ -29,7 +30,7 @@ export const Stack = styled.div`
   padding: 3rem;
 
   span{
-    font-size: 18rem;
+    font-size: 12rem;
   }
 
   p{
@@ -65,5 +66,22 @@ export const Stack = styled.div`
 
   .types{
     color: #007acc;
+  }
+
+  @media (max-width: 415px) {
+    margin: 3rem 1rem 0 1rem;
+    padding: 3rem;
+    
+    span{
+      font-size: 6rem;
+    }
+
+    p{
+      font-size: 1.2rem;
+    
+      span{
+        font-size: 1.5rem;
+      }
+    }
   }
 `

@@ -29,16 +29,22 @@ export const Title = styled.div`
     font-weight: 600;
     color: var(--white);
   }
+
+  @media (max-width: 415px) {
+    h2{
+      font-size: 2rem;
+    }
+  }
 `
 
 
 export const Content = styled.section`
   display: grid;
-  gap: 9rem;
+  gap: 5rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
 
-  @media (max-width: 375px) {
+  @media (max-width: 415px) {
     grid-template-columns: 1fr;
   }
 `
@@ -117,5 +123,34 @@ export const Post = styled.div`
     &:hover {
       color: var(--white);
     }
+}
+
+@media (max-width: 415px) {
+  max-width: 25rem;
+
+  img{
+    height: auto;
+  }
+
+  h3{
+    font-size: 1.875rem;
+  }
+
+  p{
+    font-size: 1rem;
+  }
+
+  div{
+
+    a{
+      font-size: 2.25rem;
+      width: 4rem;
+      height: 3rem;
     }
+  }
+
+  .dev{
+    font-size: 1.3rem;
+  }
+}
 `

@@ -13,7 +13,7 @@ export const Background = styled.div`
       height: 400px;
       object-fit: cover;
     }
-  @media (max-width: 375px) {
+  @media (max-width: 415px) {
     img{
       height: 200px;
     }
@@ -34,7 +34,7 @@ export const Content = styled.nav`
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: 375px) {
+  @media (max-width: 415px) {
     display: flex;
     flex-direction: column;
     margin: -43rem auto;
@@ -79,7 +79,7 @@ export const Perfil = styled.div`
     color: var(--white);
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 415px) {
     flex-direction: column;
 
     img{
@@ -104,7 +104,7 @@ export const Perfil = styled.div`
   }
 `
 export const Persona = styled.div`
-  @media (max-width: 375px) {
+  @media (max-width: 415px) {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -112,7 +112,7 @@ export const Persona = styled.div`
 `
 
 export const Info = styled.div`
-  @media (max-width: 375px) {
+  @media (max-width: 415px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,7 +162,7 @@ export const Menu = styled.div`
     }
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 415px) {
     margin-top: 2.875rem;
 
     a{
