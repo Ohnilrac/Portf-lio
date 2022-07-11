@@ -26,7 +26,7 @@ export function Header() {
             </ul>
           </Persona>
           <Info>
-            <h4>JonasNunes</h4>
+            <h3>JonasNunes</h3>
             <p>Desenvolvedor Web - FrontEnd</p>
           </Info>
         </Perfil>

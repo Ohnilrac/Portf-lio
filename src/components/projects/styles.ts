@@ -68,12 +68,12 @@ export const Post = styled.div`
 
   h3{
     color: var(--white);
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 1.5rem 0;
   }
 
   p{
-    font-size: 1.5rem;
+    font-size: 1.875rem;
     margin-bottom: 1rem;
     padding: 1rem;
     color: var(--white);
@@ -137,7 +137,7 @@ export const Post = styled.div`
   }
 
   p{
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 
   div{

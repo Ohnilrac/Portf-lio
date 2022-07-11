@@ -69,13 +69,13 @@ export const Perfil = styled.div`
     }
   }
 
-  h4{
+  h3{
     font-size: 3rem;
     color: var(--white);
   }
 
   p{
-    font-size: 1.5rem;
+    font-size: 1.875rem;
     color: var(--white);
   }
 
@@ -94,7 +94,7 @@ export const Perfil = styled.div`
       }
     }
 
-    h4{
+    h3{
       font-size: 1.875rem;
     }
 
