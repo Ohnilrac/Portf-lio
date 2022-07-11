@@ -8,15 +8,18 @@ export function BackTotop() {
 
   useScrollPosition(
     ({ currPos }) => {
-      const isOnTop = currPos.y === 0;
+      const isOnTop = currPos.y > -350;
+      const hidden= currPos.y < 349;
 
-        if (isOnTop != shouldStyleOnScroll)
-          setShouldStyleOnScroll(false);
+        if (isOnTop !== shouldStyleOnScroll)
+          setShouldStyleOnScroll(isOnTop);
+          else if (hidden < shouldStyleOnScroll) 
+          setShouldStyleOnScroll(hidden);
       },
       [shouldStyleOnScroll],
       undefined,
       false,
-      300,
+      100,
   );
 
   return(
