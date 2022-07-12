@@ -16,11 +16,11 @@ export const Content = styled.div`
   align-items: center;
 
   h3{
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: var(--white);
 
     span{
-      font-size: 2rem;
+      font-size: 1.75rem;
       color: #61dafb;
     }
   }
@@ -29,16 +29,15 @@ export const Content = styled.div`
     display: flex;
     align-self: center;
     justify-content: center;
-
-    margin-top: 3.5rem;
+    margin-top: 3rem;
 
     li{
-      font-size: 3rem;
       margin-left: 3rem;
-
+      
       a{
         display: inline-block;
         color: var(--white);
+        font-size: 2.5rem;
         transition: 0.5s;
 
         &:hover{
@@ -49,21 +48,39 @@ export const Content = styled.div`
     }
   }
 
-  @media (max-width: 415px) {
+  @media (min-width: 760px) {
     h3{
-      font-size: 1.5rem;
+      font-size: 2rem;
 
       span{
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
     }
 
     ul{
-      margin-top: 3rem;
-
       li{
-        font-size: 2.5rem;
+        a{
+          font-size: 2.875rem;
+        }
       }
     }
   }
+
+  @media (min-width: 1000px) {
+  h3{
+    font-size: 2.5rem;
+    
+    span{
+      font-size: 2.5rem;
+    }
+  }
+
+  ul{
+    li{
+      a{
+        font-size: 3.25rem;
+      }
+    }
+  }
+}
 `

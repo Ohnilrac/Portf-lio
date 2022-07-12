@@ -10,12 +10,19 @@ export const Background = styled.div`
 
     img{
       width: 100%;
-      height: 400px;
+      height: 200px;
       object-fit: cover;
     }
-  @media (max-width: 415px) {
+
+  @media (min-width: 760px) {
     img{
-      height: 200px;
+      height: 300px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    img{
+      height: 360px;
     }
   }
 `
@@ -28,27 +35,27 @@ export const Container = styled.header`
 
 export const Content = styled.nav`
   width: 80%;
-  margin: -55rem auto;
+  margin: -43rem auto;
   height: 55rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 
-  @media (max-width: 415px) {
-    display: flex;
-    flex-direction: column;
-    margin: -43rem auto;
-    justify-content: normal;
+  @media (min-width: 1500px) {
+    margin-top: -55rem;
+    flex-direction: row;
+    justify-content: space-between;
   }
 `
 export const Perfil = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
 
   img{
-    width: 120px;
-    height: 120px;
-    margin: 2rem 2rem 0.75rem 0;
+    width: 60px;
+    height: 60px;
+    margin: 1rem auto;
     clip-path: circle();
   }
 
@@ -57,7 +64,7 @@ export const Perfil = styled.div`
 
     a{
       display: inline-block;
-      font-size: 2.75rem;
+      font-size: 1.875rem;
       margin-right: 0.5rem;
       color: var(--white);
       transition: 0.3s;
@@ -69,54 +76,87 @@ export const Perfil = styled.div`
     }
   }
 
-  h3{
-    font-size: 3rem;
-    color: var(--white);
-  }
-
-  p{
-    font-size: 1.875rem;
-    color: var(--white);
-  }
-
-  @media (max-width: 415px) {
-    flex-direction: column;
-
+  @media (min-width: 760px) {
     img{
-      width: 60px;
-      height: 60px;
-      margin: 1rem auto;
+      width: 90px;
+      height: 90px;
     }
 
     ul{
       a{
-        font-size: 1.75rem;
+        font-size: 2.875rem;
       }
     }
+  }
 
-    h3{
-      font-size: 1.875rem;
+  @media (min-width: 1000px) {
+    img{
+      width: 120px;
+      height: 120px;
     }
 
-    p{
-      font-size: 0.875rem;
+    ul{
+      a{
+        font-size: 3.25rem;
+      }
     }
+  }
+
+  @media (min-width: 1500px) {
+    flex-direction: row;
   }
 `
 export const Persona = styled.div`
-  @media (max-width: 415px) {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 `
 
 export const Info = styled.div`
-  @media (max-width: 415px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3{
+    font-size: 2.2rem;
+    color: var(--white);
   }
+
+  p{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--white);
+  }
+  
+  @media (min-width: 320px) {
+    h3{
+      font-size: 2.5rem;
+    }
+
+    p{
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 760px) {
+    h3{
+      font-size: 3.25rem;
+    }
+
+    p{
+      font-size: 2.25rem;
+    }
+  }
+
+  @media (min-width: 1000px) {
+  h3{
+    font-size: 3.875rem;
+  }
+
+  p{
+    font-size: 2.75rem;
+  }
+}
 `
 
 export const Menu = styled.div`
@@ -125,66 +165,75 @@ export const Menu = styled.div`
   background: var(--box);
 
   a{
-    width: 15rem;
-    height: 5rem;
-    border: 2px solid var(--buttons);
-    font-size: 2rem;
-    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 0;
-    transition: 1s;
-
-    &::after, &::before{
-    position: absolute;
-    background: var(--box);
-    z-index: -1;
-    transition: 1s;
-    content: '';
+    font-size: 2rem;
+    color: var(--white);
+    
+    &:hover {
+      color: var(--buttons);
+      transition: 0.4s;
     }
 
-    &::before{
-      height: 5rem;
-      width: 13rem;
-    }
-    &::after{
-      width: 15rem;
-      height: 5rem;
+    &:first-child{
+      margin-left: 1.5rem;
     }
 
-    &:hover::after{
-      height: 0;
+    &:last-child{
+      margin-right: 1.5rem;
     }
-    &:hover::before{
-      width: 0;
+
+    &:nth-child(2)::before,
+    :nth-child(3)::before{
+      content: "";
+      width: .2rem;
+      height: 2rem;
+      background: var(--buttons);
+      margin: 0.875rem;
     }
   }
 
-  @media (max-width: 415px) {
-    margin-top: 2.875rem;
+  @media (min-width: 320px) {
+    margin-top: 2rem;
 
     a{
-      width: 8rem;
-      height: 0.25rem;
       font-size: 1.5rem;
       border: none;
-
-      &::before{
-        height: 3rem;
-        width: 8rem;
-      }
-      &::after{
-        width: 8rem;
-        height: 3rem;
-      }
-      &:hover::after{
-      height: 3rem;
-      }
-      &:hover::before{
-        width: 8rem;
-      }
     }
   }
+
+  @media (min-width: 414px) {
+    margin-top: 2.75rem;
+
+    a{
+      font-size: 1.875rem;
+    }
+  }
+
+  @media (min-width: 760px) {
+    margin-top: 2rem;
+
+    a{
+      font-size: 2.75rem;
+
+      &:nth-child(2)::before,
+      :nth-child(3)::before{
+        margin: 1.5rem;
+    }
+    }
+  }
+
+  @media (min-width: 1000px) {
+    margin-top: 3rem;
+
+  a{
+    font-size: 3rem;
+
+    &:nth-child(2)::before,
+      :nth-child(3)::before{
+        margin: 1.875rem;
+    }
+  }
+}
 `

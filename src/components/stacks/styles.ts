@@ -10,14 +10,20 @@ export const Tools = styled.section`
   align-items: center;
 `
 export const Content = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-  @media (max-width: 415px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  @media (min-width: 760px) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
+
+  @media (min-width: 1000px) {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (min-width: 1500px) {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
 `
 
 export const Stack = styled.div`
@@ -26,23 +32,22 @@ export const Stack = styled.div`
   align-items: center;
 
   background: var(--box);
-  margin: 4rem 5rem 0 2rem;
+  margin: 3rem 0.25rem 0 1rem;
   padding: 3rem;
 
   span{
-    font-size: 12rem;
+    font-size: 8rem;
   }
 
   p{
     display: flex;
-
-    font-size: 2rem;
+    align-items: center;
+    font-size: 1.35rem;
     color: var(--white);
     margin-bottom: 1rem;
 
-
     span{
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: var(--buttons);
       margin-right: 1.5rem;
     }
@@ -68,20 +73,49 @@ export const Stack = styled.div`
     color: #007acc;
   }
 
-  @media (max-width: 415px) {
-    margin: 3rem 1rem 0 1rem;
-    padding: 3rem;
-    
+  @media (min-width: 414px) {
     span{
-      font-size: 6rem;
+      font-size: 9rem;
     }
 
     p{
-      font-size: 1.2rem;
+      font-size: 1.875rem;
     
       span{
-        font-size: 1.5rem;
+        font-size: 2.25rem;
       }
     }
   }
+
+  @media (min-width: 760px) {
+    height: 30rem;
+
+    span{
+      font-size: 10rem;
+    }
+
+    p{
+      font-size: 2rem;
+
+      span{
+        font-size: 3rem;
+      }
+    }
+  }
+
+  @media (min-width: 1000px) {
+    height: 35rem;
+  
+    span{
+    font-size: 15rem;
+  }
+
+  p{
+    font-size: 2.5rem;
+    
+      span{
+        font-size: 3.25rem;
+      }
+  }
+}
 `

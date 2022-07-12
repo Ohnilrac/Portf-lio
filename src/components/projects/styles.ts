@@ -20,37 +20,45 @@ export const Title = styled.div`
     width: 100%;
     background: var(--buttons);
     height: 3px;
-    /* margin-bottom: 3rem; */
   }
   
   h2{
     padding: 0.25rem;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
     color: var(--white);
   }
 
-  @media (max-width: 415px) {
+  @media (min-width: 414px) {
     h2{
-      font-size: 2rem;
+      font-size: 3.25rem;
     }
   }
-`
 
+  @media (min-width: 1000px) {
+    h2{
+      font-size: 4.25rem;
+    }
+}
+`
 
 export const Content = styled.section`
   display: grid;
   gap: 5rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
 
-  @media (max-width: 415px) {
-    grid-template-columns: 1fr;
+  @media (min-width: 760px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1500px) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 `
 
 export const Post = styled.div`
-  max-width: 31rem;
+  min-width: 25rem;
   margin-top: 4rem;
   border-radius: 8px;
   background: var(--box);
@@ -62,23 +70,22 @@ export const Post = styled.div`
   img{
     padding: 0 1.5rem ;
     width: 100%;
-    height: 200px;
+    height: auto;
     object-fit: cover;
   }
 
   h3{
     color: var(--white);
-    font-size: 3rem;
+    font-size: 2.2rem;
     margin: 1.5rem 0;
   }
 
   p{
-    font-size: 1.875rem;
+    font-size: 1.35rem;
     margin-bottom: 1rem;
     padding: 1rem;
     color: var(--white);
   }
-
 
   div{
     display: flex;
@@ -86,9 +93,9 @@ export const Post = styled.div`
     width: 100%;
 
     a{
-      font-size: 3.5rem;
-      width: 6rem;
-      height: 4rem;
+      font-size: 2.55rem;
+      width: 5rem;
+      height: 3rem;
       margin: 0 2rem 0.75rem 2rem;
       padding-top: 0.25rem;
 
@@ -111,7 +118,7 @@ export const Post = styled.div`
     align-items: center;
     justify-content: center;
 
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: bold;
     border-radius: 8px;
     background: var(--buttons);
@@ -125,32 +132,54 @@ export const Post = styled.div`
     }
 }
 
-@media (max-width: 415px) {
-  max-width: 25rem;
-
-  img{
-    height: auto;
-  }
-
+@media (min-width: 414px) {
   h3{
-    font-size: 1.875rem;
+    font-size: 2.875rem;
   }
 
   p{
-    font-size: 0.875rem;
+    font-size: 1.75rem;
   }
 
   div{
 
     a{
-      font-size: 2.25rem;
-      width: 4rem;
-      height: 3rem;
+      font-size: 2.875rem;
+      width: 6rem;
+      height: 3.75rem;
     }
   }
 
   .dev{
-    font-size: 1.3rem;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 760px) {
+  img{
+    height: 200px;
+  }
+}
+
+@media (min-width: 1000px) {
+  h3{
+    font-size: 3.5rem;
+  }
+
+  p{
+    font-size: 2.2rem;
+  }
+
+  div{
+    a{
+      font-size: 3.5rem;
+      width: 8rem;
+      height: 4.75rem;
+    }
+  }
+
+  .dev{
+    font-size: 2.5rem;
   }
 }
 `
