@@ -37,7 +37,7 @@ export const Title = styled.div`
 
   @media (min-width: 1000px) {
     h2{
-      font-size: 4.25rem;
+      font-size: 3.25rem;
     }
 }
 `
@@ -58,7 +58,6 @@ export const Content = styled.section`
 `
 
 export const Post = styled.div`
-  min-width: 25rem;
   margin-top: 4rem;
   border-radius: 8px;
   background: var(--box);
@@ -162,19 +161,21 @@ export const Post = styled.div`
 }
 
 @media (min-width: 1000px) {
+  width: 40rem;
+
   h3{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 
   p{
-    font-size: 2.2rem;
+    font-size: 1.75rem;
   }
 
   div{
     a{
-      font-size: 3.5rem;
-      width: 8rem;
-      height: 4.75rem;
+      font-size: 3rem;
+      width: 6rem;
+      height: 4rem;
     }
   }
 

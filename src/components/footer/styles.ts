@@ -68,17 +68,17 @@ export const Content = styled.div`
 
   @media (min-width: 1000px) {
   h3{
-    font-size: 2.5rem;
+    font-size: 2rem;
     
     span{
-      font-size: 2.5rem;
+      font-size: 1.75rem;
     }
   }
 
   ul{
     li{
       a{
-        font-size: 3.25rem;
+        font-size: 2.5rem;
       }
     }
   }

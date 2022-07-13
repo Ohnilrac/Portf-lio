@@ -66,7 +66,7 @@ export const Container = styled.main`
     }
 
     p{
-      font-size: 2.55rem;
+      font-size: 2.1rem;
     }
   }
 }

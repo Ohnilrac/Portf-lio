@@ -7,7 +7,7 @@ import codar from "../../assets/codar.png"
 import destino from "../../assets/destino.png"
 import estetica from "../../assets/estetica.png"
 import financas from "../../assets/financas.png"
-import wait from "../../assets/wait.gif"
+import login from "../../assets/LoginDarkMode.png"
 
 import Zoom from 'react-reveal/Zoom';
 
@@ -20,12 +20,17 @@ export function Projects(){
       <Content>
         <Zoom>
           <Post>
-            <img src={wait} alt="" />
-            <h3>Jonas</h3>
-            <p>E esse é o projeto em que você atualmente está navegando</p>
-            <a href="https://github.com/Ohnilrac/Portfolio"
-              target="_blank"
-              className="dev">Em desenvolvimento<AiFillGithub /></a>
+            <img src={login} alt="" />
+            <h3>Login Dark Mode</h3>
+            <p>Esqueleto de um formulario de login em modo Dark.Com o básico de HTML e CSS.</p>
+            <div>
+              <a href="https://github.com/Ohnilrac/LoginDarkMode" 
+              title="Acessar o repositório diretamente no Github"
+              target="_blank"><AiFillGithub /></a>
+              <a href="https://ohnilrac.github.io/LoginDarkMode/"
+              title="Visualizar diretamente o projeto"
+              target="_blank"><AiFillEye /></a>
+            </div>
           </Post>
         </Zoom>
         <Zoom>

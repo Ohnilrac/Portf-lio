@@ -91,13 +91,13 @@ export const Perfil = styled.div`
 
   @media (min-width: 1000px) {
     img{
-      width: 120px;
-      height: 120px;
+      width: 110px;
+      height: 110px;
     }
 
     ul{
       a{
-        font-size: 3.25rem;
+        font-size: 2.75rem;
       }
     }
   }
@@ -150,11 +150,11 @@ export const Info = styled.div`
 
   @media (min-width: 1000px) {
   h3{
-    font-size: 3.875rem;
+    font-size: 2.875rem;
   }
 
   p{
-    font-size: 2.75rem;
+    font-size: 1.75rem;
   }
 }
 `
@@ -163,6 +163,7 @@ export const Menu = styled.div`
   display: flex;
   align-items: center;
   background: var(--box);
+  border-radius: 8px;
 
   a{
     display: flex;
@@ -228,7 +229,7 @@ export const Menu = styled.div`
     margin-top: 3rem;
 
   a{
-    font-size: 3rem;
+    font-size: 2.25rem;
 
     &:nth-child(2)::before,
       :nth-child(3)::before{

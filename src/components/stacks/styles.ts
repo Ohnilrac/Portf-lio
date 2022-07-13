@@ -111,10 +111,10 @@ export const Stack = styled.div`
   }
 
   p{
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     
       span{
-        font-size: 3.25rem;
+        font-size: 3rem;
       }
   }
 }
