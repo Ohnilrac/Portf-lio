@@ -8,6 +8,7 @@ import destino from "../../assets/destino.png"
 import estetica from "../../assets/estetica.png"
 import financas from "../../assets/financas.png"
 import login from "../../assets/LoginDarkMode.png"
+import formulario from "../../assets/formulario.png"
 
 import Zoom from 'react-reveal/Zoom';
 
@@ -18,6 +19,21 @@ export function Projects(){
         <Title><h2>PROJETOS</h2></Title>
       </Zoom>
       <Content>
+      <Zoom>
+          <Post>
+            <img src={formulario} alt="" />
+            <h3>Formulário de cadastro</h3>
+            <p>Esqueleto de um formulario de cadastro</p>
+            <div>
+              <a href="https://github.com/Ohnilrac/Formulario-de-cadastro" 
+              title="Acessar o repositório diretamente no Github"
+              target="_blank"><AiFillGithub /></a>
+              <a href="https://ohnilrac.github.io/Formulario-de-cadastro/"
+              title="Visualizar diretamente o projeto"
+              target="_blank"><AiFillEye /></a>
+            </div>
+          </Post>
+        </Zoom>
         <Zoom>
           <Post>
             <img src={login} alt="" />
