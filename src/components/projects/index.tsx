@@ -23,7 +23,7 @@ export function Projects(){
           <Post>
             <img src={formulario} alt="" />
             <h3>Formulário de cadastro</h3>
-            <p>Esqueleto de um formulario de cadastro</p>
+            <p>Esqueleto de um formulario de cadastro com validação de todos os campos.</p>
             <div>
               <a href="https://github.com/Ohnilrac/Formulario-de-cadastro" 
               title="Acessar o repositório diretamente no Github"
