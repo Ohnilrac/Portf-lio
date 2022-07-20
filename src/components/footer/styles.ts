@@ -16,7 +16,7 @@ export const Content = styled.div`
   align-items: center;
 
   h3{
-    font-size: 1.75rem;
+    font-size: 1.56rem;
     color: var(--white);
 
     span{

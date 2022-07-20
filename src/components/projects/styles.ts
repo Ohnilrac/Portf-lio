@@ -34,12 +34,6 @@ export const Title = styled.div`
       font-size: 3.25rem;
     }
   }
-
-  @media (min-width: 1000px) {
-    h2{
-      font-size: 3.25rem;
-    }
-}
 `
 
 export const Content = styled.section`
@@ -65,6 +59,7 @@ export const Post = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   
   img{
     padding: 0 1.5rem ;
@@ -76,14 +71,19 @@ export const Post = styled.div`
   h3{
     color: var(--white);
     font-size: 2.2rem;
-    margin: 1.5rem 0;
+    padding: 1.5rem .5rem;
+    text-align: center;
   }
 
   p{
     font-size: 1.35rem;
     margin-bottom: 1rem;
     padding: 1rem;
+    width: 32rem;
     color: var(--white);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   div{
@@ -177,10 +177,6 @@ export const Post = styled.div`
       width: 6rem;
       height: 4rem;
     }
-  }
-
-  .dev{
-    font-size: 2.5rem;
   }
 }
 `

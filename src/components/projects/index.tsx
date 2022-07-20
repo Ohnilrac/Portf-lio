@@ -23,7 +23,7 @@ export function Projects(){
           <Post>
             <img src={formulario} alt="" />
             <h3>Formulário de cadastro</h3>
-            <p>Esqueleto de um formulario de cadastro com validação de todos os campos.</p>
+            <p title="Esqueleto de um formulario de cadastro com validação de todos os campos.">Esqueleto de um formulario de cadastro com validação de todos os campos.</p>
             <div>
               <a href="https://github.com/Ohnilrac/Formulario-de-cadastro" 
               title="Acessar o repositório diretamente no Github"
@@ -38,7 +38,7 @@ export function Projects(){
           <Post>
             <img src={login} alt="" />
             <h3>Login Dark Mode</h3>
-            <p>Esqueleto de um formulario de login em modo Dark.Com o básico de HTML e CSS.</p>
+            <p title="Esqueleto de um formulario de login em modo Dark.Com o básico de HTML e CSS.">Esqueleto de um formulario de login em modo Dark.Com o básico de HTML e CSS.</p>
             <div>
               <a href="https://github.com/Ohnilrac/LoginDarkMode" 
               title="Acessar o repositório diretamente no Github"
@@ -53,7 +53,7 @@ export function Projects(){
           <Post>
             <img src={loja} alt="" />
             <h3>Loja de naturais</h3>
-            <p>Uma loja virtual, para pratica de projetos em react com typescript e styled-components.</p>
+            <p title="Uma loja virtual, para pratica de projetos em react com typescript e styled-components.">Uma loja virtual, para pratica de projetos em react com typescript e styled-components.</p>
             <div>
               <a href="https://github.com/Ohnilrac/Loja" 
               title="Acessar o repositório diretamente no Github"
@@ -68,7 +68,7 @@ export function Projects(){
           <Post>
             <img src={destino} alt="" />
             <h3>Seu-Destino</h3>
-            <p>Uma aplicação que, quando o usuário realiza uma pergunta sobre seu destino, em questão de segundos ele receberá a resposta do seu questionamento!</p>
+            <p title="Uma aplicação que, quando o usuário realiza uma pergunta sobre seu destino, em questão de segundos ele receberá a resposta do seu questionamento!">Uma aplicação que, quando o usuário realiza uma pergunta sobre seu destino, em questão de segundos ele receberá a resposta do seu questionamento!</p>
             <div>
               <a href="https://github.com/Ohnilrac/Seu-Destino"
               title="Acessar o repositório diretamente no Github" target="_blank"><AiFillGithub /></a>
@@ -82,7 +82,7 @@ export function Projects(){
           <Post>
             <img src={codar} alt="" />
             <h3>Codar-site</h3>
-            <p>Esse foi o desafio para desenvolver um site que desenvolve outros sites para empresas, desenvolvi em React, para praticar meu conhecimento na ferramenta</p>
+            <p title="Esse foi o desafio para desenvolver um site que desenvolve outros sites para empresas, desenvolvi em React, para praticar meu conhecimento na ferramenta.">Esse foi o desafio para desenvolver um site que desenvolve outros sites para empresas, desenvolvi em React, para praticar meu conhecimento na ferramenta.</p>
             <div>
               <a href="https://github.com/Ohnilrac/Codar-site" 
               title="Acessar o repositório diretamente no Github"
@@ -97,7 +97,7 @@ export function Projects(){
           <Post>
             <img src={financas} alt="" />
             <h3>Financas</h3>
-            <p>Projeto em react feito com typescript, styled-componente, hooks e contextos, aplicação feita para estudo.</p>
+            <p title="Projeto em react feito com typescript, styled-componente, hooks e contextos, aplicação feita para estudo.">Projeto em react feito com typescript, styled-componente, hooks e contextos, aplicação feita para estudo.</p>
             <div>
               <a href="https://github.com/Ohnilrac/Financas" 
               title="Acessar o repositório diretamente no Github"
@@ -112,7 +112,7 @@ export function Projects(){
           <Post>
             <img src={amazing} alt="" />
             <h3>AmazingGraph</h3>
-            <p>Um projeto de desáfio dev para práticas de HTML,CSS e JS, uma landing page simples, mas com o intuito de fixação de conhecimento em desenvolvimento web.</p>
+            <p title="Um projeto de desáfio dev para práticas de HTML,CSS e JS, uma landing page simples, mas com o intuito de fixação de conhecimento em desenvolvimento web.">Um projeto de desáfio dev para práticas de HTML,CSS e JS, uma landing page simples, mas com o intuito de fixação de conhecimento em desenvolvimento web.</p>
             <div>
               <a href="https://github.com/Ohnilrac/AmazingGraph" 
               title="Acessar o repositório diretamente no Github"
@@ -127,7 +127,7 @@ export function Projects(){
           <Post>
             <img src={estetica} alt="" />
             <h3>Estetica Capilar</h3>
-            <p>Um projeto realizado na NLW6 da RocketSeat e com algumas modificações minhas utilizando o basico de HTML,CSS e JS, completamente responsivo e com funcionalidade.</p>
+            <p title="Um projeto realizado na NLW6 da RocketSeat e com algumas modificações minhas utilizando o basico de HTML,CSS e JS, completamente responsivo e com funcionalidade.">Um projeto realizado na NLW6 da RocketSeat e com algumas modificações minhas utilizando o basico de HTML,CSS e JS, completamente responsivo e com funcionalidade.</p>
             <div>
               <a href="https://github.com/Ohnilrac/estetica_capilar" 
               title="Acessar o repositório diretamente no Github"
