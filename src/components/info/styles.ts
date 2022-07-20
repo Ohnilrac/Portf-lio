@@ -59,7 +59,13 @@ export const Profile = styled.header`
       margin: 0 1rem;
 
       a {
+        display: inline-block;
         color: var(--buttons);
+        transition: 0.5s;
+
+        &:hover {
+          transform: translateY(-10px);
+        }
       }
     }
 
@@ -176,7 +182,6 @@ export const About = styled.section`
   }
 
   @media (min-width: 1000px) {
-    /* width: 50rem; */
     margin-top: 15rem;
   }
 `
@@ -218,12 +223,11 @@ export const Icons = styled.ul`
     }
   }
   @media (min-width: 1000px) {
-    li{
+    li {
       margin-top: 7rem;
       font-size: 7rem;
     }
   }
   @media (min-width: 1500px) {
-    
   }
 `
