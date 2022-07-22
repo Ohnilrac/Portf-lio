@@ -28,10 +28,6 @@ export const Content = styled.section`
   @media (min-width: 1000px) {
     width: 35rem;
   }
-
-  @media (min-width: 1500px) {
-    /* min-height: 2px; */
-  }
 `
 
 export const Profile = styled.header`
